@@ -4,7 +4,7 @@ export interface ButtonProps {
   onClick: () => void;
 }
 
-export type CardProps = {
+export interface CardProps {
   title: string;
   content: string;
-};
+}
