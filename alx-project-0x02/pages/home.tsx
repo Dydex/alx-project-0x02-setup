@@ -2,6 +2,7 @@ import Card from '@/components/common/Card';
 import { useState } from 'react';
 import PostModal from '@/components/common/PostModal';
 import { Post } from '@/interfaces';
+import Header from '@/components/layout/Header';
 
 const HomePage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
   };
   return (
     <section>
+      <Header />
       <Card title='Bag' content='This is the Bag' />
       <h1>This is the Home Page</h1>
 

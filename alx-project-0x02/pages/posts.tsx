@@ -1,8 +1,13 @@
+import Header from '@/components/layout/Header';
+
 const Pages: React.FC = () => {
   return (
-    <div>
-      <h1>Posts Page</h1>
-    </div>
+    <>
+      <Header />
+      <div>
+        <h1>Posts Page</h1>
+      </div>
+    </>
   );
 };
 
