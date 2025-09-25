@@ -1,7 +1,8 @@
 export interface ButtonProps {
-  type?: 'reset' | 'button' | 'submit';
-  label: string;
-  onClick: () => void;
+  shape?: 'rounded-sm' | 'rounded-md' | 'rounded-full';
+  size?: 'small' | 'medium' | 'large';
+  title: string;
+  onClick?: () => void;
 }
 
 export interface CardProps {
