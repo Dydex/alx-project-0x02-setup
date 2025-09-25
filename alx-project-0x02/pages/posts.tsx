@@ -22,7 +22,7 @@ const Posts: React.FC<{ posts: PostProps[] }> = ({ posts }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(
     'https://jsonplaceholder.typicode.com/posts?_limit=5'
   );
